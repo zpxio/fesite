@@ -27,8 +27,3 @@ var Celsius = &Unit{
 	Family:  Metric,
 	Measure: Temperature,
 }
-
-func registerTemperature() {
-	registerLookup(Fahrenheit, "F")
-	registerLookup(Celsius, "C")
-}

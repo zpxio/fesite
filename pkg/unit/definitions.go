@@ -52,7 +52,5 @@ func reinitialize() {
 	registerMetricVolume()
 	registerMetricWeight()
 
-	registerTemperature()
-
 	registerGeneric()
 }

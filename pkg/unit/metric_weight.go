@@ -17,13 +17,13 @@
 package unit
 
 // Create units
-var Gram = &Unit{
+var Gram = Unit{
 	Display: "g",
 	Family:  Metric,
 	Measure: Weight,
 }
 
-var Kilogram = &Unit{
+var Kilogram = Unit{
 	Display: "kg",
 	Family:  Metric,
 	Measure: Weight,

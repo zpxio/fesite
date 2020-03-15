@@ -37,7 +37,7 @@ func (s *ResolverTestSuite) TestResolution_SpotCheck() {
 }
 
 func (s *ResolverTestSuite) TestResolution_CaseInsensitive() {
-	tu := &Unit{
+	tu := Unit{
 		Display: "Testor",
 		Family:  Universal,
 		Measure: Number,

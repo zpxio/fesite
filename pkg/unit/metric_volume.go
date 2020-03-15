@@ -17,13 +17,13 @@
 package unit
 
 // Create units
-var Milliliter = &Unit{
+var Milliliter = Unit{
 	Display: "mL",
 	Family:  Metric,
 	Measure: Volume,
 }
 
-var Liter = &Unit{
+var Liter = Unit{
 	Display: "L",
 	Family:  Metric,
 	Measure: Volume,

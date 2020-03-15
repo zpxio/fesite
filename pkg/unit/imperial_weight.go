@@ -17,13 +17,13 @@
 package unit
 
 // Create units
-var Pound = &Unit{
+var Pound = Unit{
 	Display: "lp",
 	Family:  Imperial,
 	Measure: Weight,
 }
 
-var OunceWeight = &Unit{
+var OunceWeight = Unit{
 	Display: "oz",
 	Family:  Imperial,
 	Measure: Weight,

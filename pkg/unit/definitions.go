@@ -16,7 +16,7 @@
 
 package unit
 
-var Dictionary = make(map[string]*Unit)
+var Dictionary = make(map[string]Unit)
 
 type Family string
 
@@ -46,7 +46,7 @@ func init() {
 }
 
 func reinitialize() {
-	Dictionary = make(map[string]*Unit)
+	Dictionary = make(map[string]Unit)
 	registerImperialVolume()
 	registerImperialWeight()
 	registerMetricVolume()

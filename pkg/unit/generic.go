@@ -16,7 +16,7 @@
 
 package unit
 
-var Count = &Unit{
+var Count = Unit{
 	Display: "",
 	Family:  Universal,
 	Measure: Number,

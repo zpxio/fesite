@@ -17,25 +17,25 @@
 package unit
 
 // Create units
-var Teaspoon = &Unit{
+var Teaspoon = Unit{
 	Display: "tsp",
 	Family:  Imperial,
 	Measure: Volume,
 }
 
-var Tablespoon = &Unit{
+var Tablespoon = Unit{
 	Display: "Tbsp",
 	Family:  Imperial,
 	Measure: Volume,
 }
 
-var Cup = &Unit{
+var Cup = Unit{
 	Display: "c",
 	Family:  Imperial,
 	Measure: Volume,
 }
 
-var Ounce = &Unit{
+var Ounce = Unit{
 	Display: "oz",
 	Family:  Imperial,
 	Measure: Volume,

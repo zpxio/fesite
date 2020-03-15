@@ -18,17 +18,17 @@ package unit
 
 import "strings"
 
-func registerLookup(u *Unit, alias ...string) {
+func registerLookup(u Unit, alias ...string) {
 	for _, a := range alias {
 		Dictionary[strings.ToLower(a)] = u
 	}
 }
 
-func Resolve(label string) *Unit {
+func Resolve(label string) Unit {
 	eLabel := strings.ToLower(label)
 	u, ok := Dictionary[eLabel]
 	if !ok {
-		u = &Unit{
+		u = Unit{
 			Display: eLabel,
 			Family:  Universal,
 			Measure: Number,

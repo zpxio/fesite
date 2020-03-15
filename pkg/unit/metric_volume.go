@@ -32,5 +32,5 @@ var Liter = &Unit{
 // Register Units
 func registerMetricVolume() {
 	registerLookup(Milliliter, "ml", "milliliter")
-	registerLookup(Tablespoon, "l", "liter")
+	registerLookup(Liter, "l", "liter")
 }

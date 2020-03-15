@@ -30,8 +30,8 @@ func Resolve(label string) Unit {
 	if !ok {
 		u = Unit{
 			Display: eLabel,
-			Family:  Universal,
-			Measure: Number,
+			Family:  DefaultFamily,
+			Measure: DefaultMeasure,
 		}
 
 		// Now register it so we never look it up again

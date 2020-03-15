@@ -26,6 +26,8 @@ const (
 	Universal Family = "universal"
 )
 
+const DefaultFamily = Universal
+
 type Measure int
 
 const (
@@ -34,6 +36,8 @@ const (
 	Temperature
 	Number
 )
+
+const DefaultMeasure = Number
 
 type Unit struct {
 	Display string
@@ -53,4 +57,21 @@ func reinitialize() {
 	registerMetricWeight()
 
 	registerGeneric()
+}
+
+func (u *Unit) UnmarshalYAML(unmarshal func(interface{}) error) error {
+	var name string
+	err := unmarshal(&name)
+
+	if err != nil {
+		return err
+	}
+
+	resolvedUnit := Resolve(name)
+
+	u.Display = resolvedUnit.Display
+	u.Measure = resolvedUnit.Measure
+	u.Family = resolvedUnit.Family
+
+	return nil
 }

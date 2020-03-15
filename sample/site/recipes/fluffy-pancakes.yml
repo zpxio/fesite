@@ -1,0 +1,55 @@
+---
+name: Fluffy Pancakes
+intro: >-
+  This is a derivative of an old recipe originally designed for waffles. The result is something that some pancake
+  purists refuse to accept, but most normally people enjoy for their fluffy texture.
+ingredients:
+  - group: Dry Part
+    items:
+      - item: all-purpose flour
+        amount: 2
+        unit: cup
+      - item: baking powder
+        amount: 1
+        unit: Tbsp
+      - item: salt
+        amount: 0.5
+        unit: tsp
+      - item: sugar
+        amount: 2.5
+        range: 0.5
+        unit: Tbsp
+  - group: Wet Part
+    items:
+      - item: milk
+        amount: 2.5
+        unit: cup
+      - item: egg
+        amount: 3
+        unit: count
+      - item: oil
+        amount: 3
+        unit: Tbsp
+      - item: vanilla extract
+        amount: 1
+        unit: tsp
+  - group: Fluff
+    items:
+      - item: egg white
+        amount: 3
+        unit: count
+directions:
+  - group: all
+    steps:
+      - Preheat a griddle to 350 degrees F.
+      - Combine the dry ingredients in a large bowl.
+      - >-
+        Combine the wet ingredients in a slightly smaller bowl. No need to mix in all the milk. The real goal is just
+        to pre-mix enough of the yolk, oil, and vanilla that it doesn’t get weird when it combines with the flour.
+      - Beat the egg whites to stiff, but not dry peaks. Leave in the bowl for now.
+      - >-
+        Make a well in the middle of the dry ingredients. Pour in the wet ingredients and combine vigorously enough to
+        make you feel better about your day. No need to make a smooth batter, but you’ll want to get rid of the large
+        lumps.
+      - Moving reasonably quickly, fold the beaten egg whites with the not-completely-smooth batter. Keep folding until there are no more egg-white “chunks”. This makes it sound rather un-appetizing. Put that out of your mind and continue to the next step.
+      - Spoon the batter onto the griddle about ⅓ cup per pancake.

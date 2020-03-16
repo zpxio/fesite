@@ -20,6 +20,7 @@ import (
 	"flag"
 	"github.com/apex/log"
 	"github.com/spf13/pflag"
+	"github.com/spf13/viper"
 	"net"
 	"os"
 )
@@ -61,6 +62,8 @@ func SetupFlags(v *Values) {
 	pflag.IPVar(&v.ListenIp, "listen", DefaultIp, "The host IP to listen on for connections")
 
 	pflag.BoolVar(&v.TestMode, "test", false, "Enable testing mode (integration, not unit)")
+
+	viper.BindPFlags(pflag.CommandLine)
 }
 
 func (v *Values) Load() {

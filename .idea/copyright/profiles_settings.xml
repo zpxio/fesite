@@ -3,5 +3,8 @@
     <module2copyright>
       <element module="Go Files" copyright="Apache 2.0" />
     </module2copyright>
+    <LanguageOptions name="CSS">
+      <option name="fileTypeOverride" value="1" />
+    </LanguageOptions>
   </settings>
 </component>

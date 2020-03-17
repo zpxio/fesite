@@ -31,7 +31,7 @@ func TestRecipeSuite(t *testing.T) {
 }
 
 func (s *RecipeSuite) TestParse_Sample() {
-	sampleFilename := "fluffy-pancakes.yml"
+	sampleFilename := "fluffy-pancakes.recipe.yml"
 	file := filepath.Join("..", "..", "testdata", sampleFilename)
 
 	r, err := ParseFile(file)

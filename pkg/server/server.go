@@ -60,6 +60,7 @@ func (d *Dispatcher) AttachUtility() {
 
 func (d *Dispatcher) AttachPages() {
 	AttachIndex(d)
+	AttachRecipeHandler(d)
 }
 
 func (d *Dispatcher) AttachSupport() {

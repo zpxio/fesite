@@ -24,6 +24,7 @@ import (
 
 type Recipe struct {
 	Name             string
+	Permalink        string
 	Intro            string
 	IngredientGroups []IngredientGroup `yaml:"ingredients"`
 	InstructionSets  []InstructionSet  `yaml:"directions"`
@@ -49,6 +50,18 @@ func Parse(data []byte) (*Recipe, error) {
 		return nil, err
 	}
 
-	log.Infof("Parsed recipe data: %+v", r)
+	log.Debugf("Parsed recipe data: %+v", r)
+
+	r.InferDefaults()
+	r.Normalize()
+
 	return &r, nil
+}
+
+func (r *Recipe) Normalize() {
+
+}
+
+func (r *Recipe) InferDefaults() {
+
 }

@@ -21,6 +21,7 @@ import (
 	"github.com/apex/log"
 	"github.com/apex/log/handlers/text"
 	"github.com/zpxio/fesite/pkg/config"
+	"github.com/zpxio/fesite/pkg/db"
 	"github.com/zpxio/fesite/pkg/server"
 	"os"
 	"os/signal"
@@ -40,6 +41,9 @@ func main() {
 	termSignals := make(chan os.Signal, 1)
 	exitChan := make(chan bool, 1)
 	signal.Notify(termSignals, syscall.SIGTERM, syscall.SIGINT)
+
+	// Do an initial scan for recipe data
+	db.Rescan()
 
 	s := server.CreateDispatcher(conf)
 	s.Start()
